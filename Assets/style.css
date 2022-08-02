@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;font-size: 22px;
+    background-color: white;
+}
+
+header {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    color: blueviolet;
+    height: 60px;
+    font-size: 2vw;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Times New Roman', Times, serif;font-size: 22px;
+  }
+
+.HighScoreBtn {
+    border-radius: 10px;
+    background-color: white;
+    text-decoration: none;
+    border: 0;
+    outline: 0; 
+    color: blueviolet;
+    font-family: 'Times New Roman', Times, serif;font-size: 20px;
+}
+
+.HighScoreBtn:hover {
+
+    background-color: pink;
+    
+  
+    
+}
+
+.buttons {
+    border-radius: 12px;
+    border: 0;
+    outline: 0; 
+    background-color: purple;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;font-size: 10px;
+}
+
+
+
+#Test {
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;font-size: 22px;
+}
+
+
+
+
+#PossibleAnswers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 2fr 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    gap: 10px 10px;
+    font-family: 'Times New Roman', Times, serif;font-size: 22px;
+}
+
+
+#QuestionHeader {
+    text-align: center;
+    align-self: baseline;
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 5;
+    place-self: center;
+    font-size: 30px;
+}
+
+#ScoreDisplay {
+    
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;
+    font-size: 15px;
+}
+
+
+
+#EnterInitials {
+    
+    grid-column: 1 / span 1;
+    grid-row: 7 / span 1;
+    font-size: 15px;
+}
+
+
+#EnterInitialsTA {
+    
+    grid-column: 2 / span 1;
+    grid-row: 7 / span 1;
+    font-size: 15px;
+    resize: none;
+    
+}
+
+#SubmitScore {
+    grid-column: 3 / span 1;
+    grid-row: 7 / span 1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0;
+    background-color: purple;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;font-size: 15px;
+}
+
+#Begin-Quiz {
+    grid-column: 2 / span 2;
+    grid-row: 5 / span 1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0;
+    background-color: purple;
+    place-self: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;font-size: 15px;
+}
+
+#Answer1 {
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0; 
+    background-color: purple;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;font-size: 15px;
+    margin-left: 25px;
+}
+
+#Answer2 {
+    grid-column: 1 / span 2;
+    grid-row: 7 / span 1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0; 
+    background-color: purple;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;font-size: 15px;
+    margin-left: 25px;
+    margin-left: 25px;
+
+}
+
+#Answer3 {
+    grid-column: 1 / span 2;
+    grid-row: 8 / span 1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0;
+    background-color: purple;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;font-size: 15px;
+    margin-left: 25px;
+}
+
+#Answer4 {
+    grid-column: 1 / span 2;
+    grid-row: 9 / span 1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0; 
+    background-color: purple;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;font-size: 15px;
+    margin-left: 25px;
+}
+
+
+
+
+
+
+#Answer1:hover{
+    
+    background-color: pink;
+     
+}
+
+#Answer2:hover{
+    
+    background-color: pink;
+  
+}
+
+#Answer3:hover{
+    
+    background-color: pink;
+  
+}
+
+#Answer4:hover{
+    
+    background-color: pink;
+  
+}
+
+#SubmitScore:hover{
+    
+    background-color: pink;
+  
+}
+
+
+
+#AnswerCWGrid {
+  
+    display: grid;
+    grid-template-columns: 4fr; 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 10px 10px; /* Gap on x and y grid */
+    font-family: 'Times New Roman', Times, serif;font-size: 22px;
+
+}
+
+#AnswerCW {
+    text-align: left;
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+    
+}

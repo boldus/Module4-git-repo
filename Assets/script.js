@@ -242,7 +242,7 @@ BeginQuizBtnEl.addEventListener("click", function() {
                     AnswerCWEl.style.display="";
                     AnswerCWEl.textContent = "Correct!";
                     AnswerCWEl.style.borderTop = "solid #800080";
-                    AnswerCWElGrid.appendChild(AnswerCWEl);
+                    AnswerCWEl.appendChild(AnswerCWEl);
                 } else {
 
 
@@ -282,7 +282,7 @@ BeginQuizBtnEl.addEventListener("click", function() {
                             AnswerCWEl.style.display=""; 
                             AnswerCWEl.textContent = "Correct!";
                             AnswerCWEl.style.borderTop = "solid #800080";
-                            AnswerCWElGrid.appendChild(AnswerCWEl);
+                            AnswerCWEl.appendChild(AnswerCWEl);
                             QuestionNumber = 0;
                             AnswerNumber = 0;
                             console.log("Im here" + timeInterval);
@@ -318,7 +318,7 @@ BeginQuizBtnEl.addEventListener("click", function() {
                     AnswerCWEl.style.display=""; 
                     AnswerCWEl.textContent = "Correct!";
                     AnswerCWEl.style.borderTop = "solid #800080";
-                    AnswerCWElGrid.appendChild(AnswerCWEl);
+                    AnswerCWGrid.appendChild(AnswerCWEl);
                     QuestionNumber = 0; 
                     AnswerNumber = 0; 
                     console.log("Im here" + timeInterval);
@@ -333,7 +333,7 @@ BeginQuizBtnEl.addEventListener("click", function() {
                     EnterInitialsEl.style.display = ""; 
                     EnterInitialsTAEl.style.display="";  
                     ScoreDisplayEl.textContent = "Your final score is: " + highScore; 
-                    EnterInitials.textContent = "Enter initials: "
+                    EnterInitialsEl.textContent = "Enter initials: "
                     SubmitScoreEl.style.display = "";
                     SubmitScoreEl.textContent = "Submit";                   
                     
@@ -399,7 +399,7 @@ BeginQuizBtnEl.addEventListener("click", function() {
                     AnswerCWEl.style.display=""; 
                     AnswerCWEl.textContent = "Correct!";
                     AnswerCWEl.style.borderTop = "solid #800080";
-                    AnswerCWElGrid.appendChild(AnswerCWEl);
+                    AnswerCWEl.appendChild(AnswerCWEl);
                 } else if (QuestionHeaderEl.textContent === "A very useful tool to debug arrays is:" && Answer3Button.textContent === "For loops") {
                     console.log("Correct");
                     QuestionNumber = 4;
@@ -407,7 +407,7 @@ BeginQuizBtnEl.addEventListener("click", function() {
                     AnswerCWEl.style.display="";
                     AnswerCWEl.textContent = "Correct!";
                     AnswerCWEl.style.borderTop = "solid #800080";
-                    AnswerCWElGrid.appendChild(AnswerCWEl);
+                    AnswerCWEl.appendChild(AnswerCWEl);
                 } else if (QuestionHeaderEl.textContent === "The condition statement if/else is enclosed with the following:" && Answer3Button.textContent === "Quotes") {
                             console.log("Inside the case now");
                             AnswerCWEl.style.display="";
@@ -444,7 +444,7 @@ BeginQuizBtnEl.addEventListener("click", function() {
                             BeginQuizBtnEl.style.display = "none"; 
                             QuestionHeaderEl.textContent = "You have finished the quiz!";
                             ScoreDisplayEl.style.display = "";
-                            EnterInitials.style.display = ""; 
+                            EnterInitialsEl.style.display = ""; 
                             EnterInitialsTA.style.display=""; 
                             finalAnswerCheck = 1
                             lastQuestionWrong();
@@ -470,7 +470,7 @@ BeginQuizBtnEl.addEventListener("click", function() {
                     AnswerCWEl.style.display=""; 
                     AnswerCWEl.textContent = "Correct!"
                     AnswerCWEl.style.borderTop = "solid #800080";
-                    AnswerCWElGrid.appendChild(AnswerCWEl);
+                    AnswerCWGrid.appendChild(AnswerCWEl);
 
                 } else {
 
@@ -518,13 +518,13 @@ BeginQuizBtnEl.addEventListener("click", function() {
                             AnswerCWEl.style.display="none"; 
                             BeginQuizBtnEl.style.display = "none"; 
                             QuestionHeaderEl.textContent = "You have finished the quiz!";
-                            ScoreDisplayElEl.style.display = ""; 
+                            ScoreDisplayEl.style.display = ""; 
                             EnterInitialsEl.style.display = ""; 
                             EnterInitialsTAEl.style.display=""; 
                             finalAnswerCheck = 1; 
                             lastQuestionWrong();
-                            ScoreDisplayElEl.textContent = "Your final score is: " + highScore; 
-                            EnterInitials.textContent = "Enter initials: "
+                            ScoreDisplayEl.textContent = "Your final score is: " + highScore; 
+                            EnterInitialsEl.textContent = "Enter initials: "
                             SubmitScoreEl.style.display = "";
                             SubmitScoreEl.textContent = "Submit";                   
                             clearInterval(timeInterval);
